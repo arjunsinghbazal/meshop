@@ -1,0 +1,26 @@
+/* Write your styles here */
+*{
+    margin: 0;
+    padding: 0;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+.input{
+    border:1px solid grey;
+    padding: 0.8rem 0.5rem;
+    /* border-bottom: 1px solid black; */
+    outline: none;
+    margin: 0.8rem 0;
+}
+.head{
+    font-size: 2rem;
+    color: grey;
+    margin: 0.9rem 0;
+}
+.btnSignup{
+    width: 7rem;
+    margin: 0.9rem 0;
+}

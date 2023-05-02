@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 1.5rem;
+    z-index: 1;
+    }
+.point{
+        text-decoration: none;
+      color: inherit;
+      outline: none;
+    }
+.point:hover{
+        color: rgb(147, 156, 139);
+        cursor: pointer;
+}
+/* Write your styles here */
+/*{
+    margin: 0;
+    padding: 0;
+} */
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 0.3rem 0.9rem;
+}
+.input{
+    border:1px solid grey;
+    padding: 0.8rem 0.5rem;
+    /* border-bottom: 1px solid black; */
+    outline: none;
+    margin: 0.4rem 0;
+}
+.head{
+    font-size: 2rem;
+    color: rgb(34, 33, 33);
+    margin: 0.9rem 0;
+}
+.btnSignup{
+    width: 11rem;
+    margin: 0.9rem 0;
+}
+.logout{
+    width: 7rem;
+    position: absolute;
+  bottom: 50%;
+  right: 0;
+  transform: translateX(-20%);
+}

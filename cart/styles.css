@@ -1,0 +1,35 @@
+/* //for header */
+*{
+    margin: 0;
+    padding: 0;
+}
+.navBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 1.5rem;
+    z-index: 1;
+    }
+.point{
+        text-decoration: none;
+      color: inherit;
+      outline: none;
+    }
+.point:hover{
+        color: rgb(147, 156, 139);
+        cursor: pointer;
+}
+
+.cart{
+    padding: 2rem 3rem;
+}
+.cart img{
+    width: 20%;
+    padding-left: 4rem;
+}
+.cart p{
+    font-size: 3rem;
+    font-weight: 200;
+}

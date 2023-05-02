@@ -1,0 +1,38 @@
+/* body:hover{
+    background-color: black;
+    color: white;
+} */
+.profile{
+padding: 4rem 3rem;
+display: flex;
+flex-direction: column;
+gap: 2rem;
+}
+.username{
+    font-size: 3rem;
+    overflow: hidden;
+}
+.useremail{
+    font-size: 3rem;
+    overflow:hidden;
+}
+.box{
+    box-shadow: 20px 20px 50px grey;
+}
+#edit{
+    text-decoration: none;
+    width: 5rem;
+}
+#logout{
+    width: 8rem;
+}
+.profilepic{
+    position: absolute;
+    width: 50vw;
+    height: 50vh;
+    top: 50%;
+    right: 0;
+    overflow: hidden;
+    
+    /* box-shadow: 20px 20px 50px grey; */
+}
