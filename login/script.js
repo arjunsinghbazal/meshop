@@ -13,12 +13,12 @@ login.addEventListener("click", (e) => {
     // console.log("email",Email,User.email);
     if(Pass==""||Email==""){
         alert("Enter Valid Password and email");
-        window.location.href="/login"
+        window.location.href="./login/"
         return
     }
    else if (User.email!=Email) {
         alert("User does not exist. Please sign up!");
-        window.location.href="/"
+        window.location.href="./"
         return;
       }
    else if (Pass!==User.password) {
@@ -30,7 +30,7 @@ login.addEventListener("click", (e) => {
   
     // Navigate to another page
     else if(User.password == Pass){
-        window.location.href = "/shop";
+        window.location.href = "./shop/";
         var token=generatekey(16);
         localStorage.setItem("key",token);
     }

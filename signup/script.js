@@ -15,7 +15,7 @@ var signupDisplay=document.getElementById('signup');
 var token = localStorage.getItem("key");
 if (token) {
   // redirect to /shop page
-  window.location.href = "/shop";
+  window.location.href = "./shop/";
 }
 
 var users=[];
@@ -26,7 +26,7 @@ var existingLocalStorageUser = JSON.parse(localStorage.getItem(email.value));
   if (existingUser || existingLocalStorageUser) {
     e.preventDefault();
   alert("You already have an account. Please log in instead.");
-  window.location.href="/login"
+  window.location.href="./login/"
     return;
 }
   if (!firstname.value || !lastname.value || !pass.value || !email.value || !confirmpass.value) {
@@ -68,7 +68,7 @@ var existingLocalStorageUser = JSON.parse(localStorage.getItem(email.value));
         users.push(user);
         localStorage.setItem("user", JSON.stringify(user));
         // localStorage.setItem(pass.value,JSON.stringify(user));
-        window.location.href="/login";
+        window.location.href="./login/";
       }, 500);
       
   }
@@ -79,7 +79,7 @@ cart.addEventListener("click",()=>{
 var token = localStorage.getItem("key");
 if (token) {
   // redirect to /shop page
-  window.location.href = "/cart";
+  window.location.href = "./cart/";
 }
 else{
   alert("Login or Signup first!!")

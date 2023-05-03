@@ -29,7 +29,7 @@ cart.addEventListener("click",()=>{
   var token = localStorage.getItem("key");
   if (token) {
     // redirect to /shop page
-    window.location.href = "/cart";
+    window.location.href = "./cart/";
   }
   else{
     alert("Login or Signup first!!")

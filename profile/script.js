@@ -17,7 +17,7 @@ var token = localStorage.getItem("key");
 logout.addEventListener("click",()=>{
     localStorage.removeItem('key');
     alert("You are logging out!...see u soon!!!")
-    window.location.href="/";
+    window.location.href="./";
 })
 
 //how to check the current usser info and change user info
@@ -57,7 +57,7 @@ else{
   user.password=newPassword.value;
   console.log("local update",user.password);
   localStorage.setItem("user", JSON.stringify(user));
-  window.location.href="/cart";
+  window.location.href="./cart/";
   return;
 }
 })
