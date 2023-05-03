@@ -7,10 +7,12 @@ padding: 4rem 3rem;
 display: flex;
 flex-direction: column;
 gap: 2rem;
+z-index: 1;
 }
 .username{
     font-size: 3rem;
     overflow: hidden;
+    z-index: 1;
 }
 .useremail{
     font-size: 3rem;
@@ -30,9 +32,9 @@ gap: 2rem;
     position: absolute;
     width: 50vw;
     height: 50vh;
-    top: 50%;
+    top: 40%;
     right: 0;
     overflow: hidden;
-    
+    z-index: -1;
     /* box-shadow: 20px 20px 50px grey; */
 }
