@@ -35,7 +35,7 @@ z-index: 1;
 .Btn{
     width: 15%;
     display: flex;
-    margin-left: 0.5rem;
+    /* margin-left: 0.5rem; */
     justify-content: space-between;
 }
 .btn{
