@@ -10,7 +10,7 @@ flex-direction: row;
 justify-content: space-between;
 background-color: black;
 color: white;
-padding: 0.5rem 2rem;
+padding: 0.3rem 2rem;
 z-index: 1;
 }
 .leftNav{
@@ -29,12 +29,13 @@ z-index: 1;
     margin: 1.5rem;
 }
 .heaDing{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 .Btn{
     width: 15%;
     display: flex;
+    margin-left: 0.5rem;
     justify-content: space-between;
 }
 .btn{
@@ -65,4 +66,5 @@ z-index: 1;
     height: 70%;
     top: 19%;
     left: 39%;
+    z-index: -1;
 }
