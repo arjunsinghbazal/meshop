@@ -15,6 +15,8 @@ login.addEventListener('click',(e)=>{
     window.location = "./login/";
 })
 
+
+
 //check if user have already login key in local storage then redirect to shop page
 
 // var token = localStorage.getItem("key");
