@@ -13,12 +13,13 @@ login.addEventListener("click", (e) => {
     // console.log("email",Email,User.email);
     if(Pass==""||Email==""){
         alert("Enter Valid Password and email");
-        window.location.href="./login/"
+        window.location.href="./"
         return
     }
-   else if (User.email!=Email) {
+   else if (User.email!==Email||(User.email!==Email&&User.password!==Pass)) {
+    console.log("login clicked")
         alert("User does not exist. Please sign up!");
-        window.location.href="./"
+        window.location.href="../signup"
         return;
       }
    else if (Pass!==User.password) {
@@ -30,9 +31,10 @@ login.addEventListener("click", (e) => {
   
     // Navigate to another page
     else if(User.password == Pass){
-        window.location.href = "./shop/";
+        window.location.href = "../shop/";
         var token=generatekey(16);
         localStorage.setItem("key",token);
+       
     }
  else{
     alert("Please Check Your Internet connection");
@@ -53,7 +55,7 @@ return key;
 var token = localStorage.getItem("key");
 if (token) {
   // redirect to /shop page
-  window.location.href = "/shop";
+  window.location.href = "../shop/";
 }
 
 let cart=document.getElementById("mycart");
@@ -62,21 +64,10 @@ cart.addEventListener("click",()=>{
 var token = localStorage.getItem("key");
 if (token) {
   // redirect to /shop page
-  window.location.href = "/cart";
+  window.location.href = "../cart/";
 }
 else{
   alert("Login or Signup first!!")
 }
 })
 
-
-
-//check if user have already login key in local storage then redirect t0 shop page
-var userData = JSON.parse(localStorage.getItem("user"));
-
-// Parse the user data to a JavaScript object
-
-// Access the current user's first and last name
-var firstName = userData.firstname;
-var lastName = userData.lastname;
-console.log(firstName);
