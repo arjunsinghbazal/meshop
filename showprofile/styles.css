@@ -3,8 +3,8 @@
     color: white;
 } */
 .profile{
-width: 100vw;
-height: 30vh;
+width: 89vw;
+max-height: 30vw;
 padding: 0.8rem 0.9rem;
 display: flex;
 flex-direction: column;

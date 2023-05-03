@@ -27,10 +27,14 @@ changeInfo.addEventListener("click",(e)=>{
   if(fname.value==""||lname.value==""){
     alert("Required Fields!!!")
   }
+  else if(fname.value==user.firstname&&lname.value==user.lastname){
+    alert("Name match to olda name please update new name");
+  }
   else {
     user.firstname=fname.value;
     user.lastname=lname.value;
     localStorage.setItem("user", JSON.stringify(user));
+    window.location.href="../showprofile";
   }
 })
 
@@ -57,7 +61,7 @@ else{
   user.password=newPassword.value;
   console.log("local update",user.password);
   localStorage.setItem("user", JSON.stringify(user));
-  window.location.href="./cart/";
+  window.location.href="../showprofile";
   return;
 }
 })
