@@ -17,7 +17,7 @@ var token = localStorage.getItem("key");
 logout.addEventListener("click",()=>{
     localStorage.removeItem('key');
     alert("You are logging out!...see u soon!!!")
-    window.location.href="./";
+    window.location.href="../";
 })
 
 //how to check the current usser info and change user info

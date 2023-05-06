@@ -1,70 +1,124 @@
-/* Write styles here */
-*{
+/* Global styles */
+* {
     margin: 0;
     padding: 0;
-}
-/* //for header */
-.navBar{
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-background-color: black;
-color: white;
-padding: 0.3rem 2rem;
-z-index: 1;
-}
-.leftNav{
+    box-sizing: border-box;
+  }
+  
+  /* Header styles */
+  .navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 0.3rem 2rem;
+    z-index: 1;
+  }
+  
+  .leftNav {
     width: 40%;
-}
-.rightNav{
+  }
+  
+  .rightNav {
     width: 30%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-.landPage{
+  }
+  
+  /* Landing page styles */
+  .landPage {
     padding: 3rem;
-}
-.marGin{
+  }
+  
+  .marGin {
     margin: 1.5rem;
-}
-.heaDing{
+  }
+  
+  .heaDing {
     font-size: 1.5rem;
     font-weight: 600;
-}
-.Btn{
+  }
+  
+  .Btn {
     width: 15%;
     display: flex;
-    /* margin-left: 0.5rem; */
     justify-content: space-between;
-}
-.btn{
+  }
+  
+  .btn {
     padding: 0.5rem 1.4rem;
     background-color: black;
     color: white;
-    border:none;
+    border: none;
     border-radius: 0.1rem;
-}
-.btn:hover{
-    background-color:white;
-    color:black;
+  }
+  
+  .btn:hover {
+    background-color: white;
+    color: black;
     border: 1px solid black;
     cursor: pointer;
-}
-.point{
+  }
+  
+  .point {
     text-decoration: none;
-  color: inherit;
-  outline: none;
-}
-.point:hover{
+    color: inherit;
+    outline: none;
+  }
+  
+  .point:hover {
     color: rgb(147, 156, 139);
     cursor: pointer;
-}
-.landingImage{
+  }
+  
+  .landingImage {
     position: absolute;
     width: 50%;
     height: 70%;
     top: 19%;
     left: 39%;
     z-index: -1;
-}
+  }
+  
+  /* Media queries */
+  @media screen and (max-width: 768px) {
+    .leftNav {
+      display: none;
+    }
+  
+    .rightNav {
+      width: 70%;
+    }
+  
+    .heaDing {
+      font-size: 1.2rem;
+    }
+  
+    .Btn {
+      width: 25%;
+        margin: 0.2rem;
+        padding: 0.2rem 0.5rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .landPage {
+      padding: 2rem;
+    }
+  
+    .marGin {
+      margin: 1rem;
+    }
+  
+    .heaDing {
+      font-size: 1rem;
+    }
+  
+    .btn {
+      margin: 0.2rem;
+      padding: 0.2rem 0.5rem;
+    }
+  }
+  

@@ -3,14 +3,14 @@
     color: white;
 } */
 .profile{
-width: 89vw;
-max-height: 30vw;
-padding: 0.8rem 0.9rem;
-display: flex;
-flex-direction: column;
-gap: 0.8rem;
-z-index: 1;
-margin-top: 4rem;
+    width: 89vw;
+    max-height: 30vw;
+    padding: 0.8rem 0.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    z-index: 1;
+    margin-top: 4rem;
 }
 .username{
     overflow: hidden;
@@ -39,20 +39,16 @@ margin-top: 4rem;
     z-index: -1;
     /* box-shadow: 20px 20px 50px grey; */
 }
-/* Write styles here */
-*{
-    margin: 0;
-    padding: 0;
-}
+
 /* //for header */
 .navBar{
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-background-color: black;
-color: white;
-padding: 0.3rem 2rem;
-z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 0.3rem 2rem;
+    z-index: 1;
 }
 .leftNav{
     width: 40%;
@@ -65,9 +61,9 @@ z-index: 1;
 }
 
 .bttn{
-display: flex;
-flex-direction: row;
-justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .btn{
@@ -85,10 +81,36 @@ justify-content: space-between;
 }
 .point{
     text-decoration: none;
-  color: inherit;
-  outline: none;
+    color: inherit;
+    outline: none;
 }
 .point:hover{
     color: rgb(147, 156, 139);
     cursor: pointer;
+}
+
+/* media queries */
+@media (max-width: 768px) {
+    .leftNav {
+        display: none;
+    }
+    .rightNav {
+        width: 60%;
+    }
+}
+
+@media (max-width: 480px) {
+    .navBar {
+        flex-direction: column;
+    }
+    .leftNav, .rightNav {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .bttn {
+        justify-content: center;
+    }
+    .btn {
+        width: 80%;
+    }
 }

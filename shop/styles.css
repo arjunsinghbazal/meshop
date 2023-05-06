@@ -240,3 +240,77 @@ main-content .items .item .circle {
 .rate{
   margin-bottom: 0.5rem;
 }
+
+/* Small devices (phones) */
+@media only screen and (max-width: 600px) {
+
+  main aside {
+    display: none;
+  }
+  
+  main main-content {
+    margin-left: 0;
+  }
+  
+  .items {
+    gap: 1rem;
+  }
+  
+  .item {
+    flex: 1 0 45%;
+    max-width: 45%;
+  }
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  main aside {
+    width: 100%;
+    position: static;
+  }
+  
+  main main-content {
+    margin-left: 0;
+  }
+  
+  .items {
+    gap: 1rem;
+  }
+  
+  .item {
+    flex: 1 0 45%;
+    max-width: 45%;
+  }
+}
+
+
+@media only screen and (min-width: 992px) {
+ 
+  main aside {
+    display: block;
+    width: 11rem;
+    position: fixed;
+  }
+  
+  main main-content {
+    margin-left: 11rem;
+  }
+  
+  .items {
+    gap: 0.5rem;
+  }
+  
+  .item {
+    flex: 1 0 20%;
+    max-width: 24%;
+  }
+}
+@media screen and (max-width: 768px) {
+  main-content .filters {
+    flex-wrap: wrap;
+  }
+  main-content .filter {
+    flex: 1 0 100%;
+    margin-top: 0.5rem;
+  }
+}

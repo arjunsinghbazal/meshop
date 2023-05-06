@@ -11,21 +11,17 @@
     color: white;
     padding: 0.5rem 2rem;
     z-index: 1;
-    }
+}
 .point{
-        text-decoration: none;
-      color: inherit;
-      outline: none;
-    }
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+}
 .point:hover{
-        color: rgb(147, 156, 139);
-        cursor: pointer;
+    color: rgb(147, 156, 139);
+    cursor: pointer;
 }
 /* Write your styles here */
-/*{
-    margin: 0;
-    padding: 0;
-} */
 .form{
     display: flex;
     flex-direction: column;
@@ -34,7 +30,6 @@
 .input{
     border:1px solid grey;
     padding: 0.5rem 0.5rem;
-    /* border-bottom: 1px solid black; */
     outline: none;
     margin: 0.4rem 0;
 }
@@ -50,7 +45,55 @@
 .logout{
     width: 7rem;
     position: absolute;
-  bottom: 50%;
-  right: 0;
-  transform: translateX(-20%);
+    bottom: 50%;
+    right: 0;
+    transform: translateX(-20%);
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .navBar{
+        padding: 0.5rem;
+    }
+    .leftNav{
+        width: 50%;
+    }
+    .rightNav{
+        width: 40%;
+    }
+    .btnSignup{
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+    .logout{
+        width: 100%;
+        margin-top: 1rem;
+        position: static;
+        transform: none;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navBar{
+        padding: 0.5rem;
+    }
+    .leftNav{
+        width: 60%;
+    }
+    .rightNav{
+        width: 30%;
+        font-size: 0.8rem;
+    }
+    .btnSignup{
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+    .logout{
+        width: 100%;
+        margin-top: 1rem;
+        position: static;
+        transform: none;
+        text-align: center;
+    }
 }
