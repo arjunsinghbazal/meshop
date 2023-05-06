@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Cart</title>
     <link rel="stylesheet" href="styles.css"/>
-    <!-- <link rel="stylesheet" href="/styles.css"> -->
+    <!-- <link rel="stylesheet" href="/styles.ss"> -->
   </head>
   <body>
+
     <div id="signup">
       <nav class="navBar">
         <a href="#" class="leftNav point">Shopping Cart</a>
@@ -17,10 +18,24 @@
           <a href="../showprofile/" class="point" style="margin-left: 3rem;">Profile</a>
         </div>
       </nav>
-      <div class="cart">
-        <p>Your Cart is Empty</p>
-        <img src="shopping-cart-realistic_1284-6011.avif" alt="404">
+      <div id="your">Your Cart</div>
+      <div class="cont">
+        <div class="cart">
+        </div>
+        <div class="checklist">
+          <h2>Checkout list</h2>
+          <p class="list">
+
+          </p>
+          <div class="bill">
+
+          </div>
+          <p class="total-price">00.00 INR</p>
+          <button id="rzp-button1" class="btn2">Checkout</button>
+        </div>
       </div>
+      <script src="script.js"></script>
+      <script src="../razorpay/script.js"></script>
     <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
   </body>
 </html>

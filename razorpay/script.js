@@ -3,11 +3,12 @@
 
 // Add button code documentation:
 // https://razorpay.com/docs/payments/payment-gateway/web-integration/standard/build-integration#code-to-add-pay-button
-
+let price=JSON.parse(localStorage.getItem('totalPrice'));
+console.log(price)
 document.getElementById("rzp-button1").onclick = function (e) {
   var options = {
-    key: "<API_KEY>", // Enter the Key ID generated from the Dashboard
-    amount: 300 * 100, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+    key: "rzp_test_PV1oQ0oMtgXOsq", // Enter the Key ID generated from the Dashboard
+    amount: price * 100, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
     currency: "INR",
     name: "MyShop Checkout",
     description: "This is your order", //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
@@ -20,6 +21,8 @@ document.getElementById("rzp-button1").onclick = function (e) {
 
   var rzpy1 = new Razorpay(options);
   rzpy1.open();
+  localStorage.removeItem("myData");
+  localStorage.removeItem("totalPrice");
   // clear mycart - localStorage
   e.preventDefault();
 };
